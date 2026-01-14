@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f6cff"/>
+      <stop offset="1" stop-color="#00d2ff"/>
+    </linearGradient>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" fill="#0b0f1a"/>
+
+  <!-- glow -->
+  <path d="M256 60 400 140 450 256 400 372 256 452 112 372 62 256 112 140Z"
+        fill="url(#g)" opacity="0.22" filter="url(#blur)"/>
+
+  <!-- main hex -->
+  <path d="M256 86 384 160 428 256 384 352 256 426 128 352 84 256 128 160Z"
+        fill="url(#g)" opacity="0.92"/>
+
+  <!-- inner -->
+  <path d="M256 156 336 202 364 256 336 310 256 356 176 310 148 256 176 202Z"
+        fill="#00d2ff" opacity="0.35"/>
+
+  <!-- subtle outline -->
+  <path d="M256 86 384 160 428 256 384 352 256 426 128 352 84 256 128 160Z"
+        fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="6"/>
+</svg>
